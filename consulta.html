@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instituto de la Caridad Universal</title>
+
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/ContactStyle.css">
+
+</head>
+<body>
+
+	<header  style="background-image:url(image/fondo3.png);">
+		<section class="encabezado">
+			<div>
+				<a href="index.html"><img src="image/logoICU.png" id="logo"></a>
+
+				<ul class="nav">								
+					<li><a href="conocenos.html">Conocenos</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="campania.html">Campañas</a></li>
+					<li><a href="consulta.html">Contacto</a></li>
+				</ul> 
+			</div>
+			<!-- <div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle glyphicon glyphicon-menu-hamburger" type="button" data-toggle="dropdown">
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="conocenos.html">Conocenos</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="campania.html">Campañas</a></li>
+					<li><a href="consulta.html">Contacto</a></li>
+				</ul>
+			  </div>
+			</div> -->
+   		</section>
+	</header>	
+	<main>
+		<div class="contenedor">
+			<div class="escribinos">
+				<fieldset>
+					<legend>Escribenos...</legend><br>
+					<form action="contact.php" method="post">
+							<label for="nombre">Nombre y Apellido</label>
+							<input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
+
+							<label for="email">Email</label>
+							<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+
+							<label for="mensaje">Mensaje</label>
+							<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+							
+							<label for="solicitud">Accion</label>
+							<select name="solicitud" id="solicitud">
+							<option value="donar">Donar</option>
+							<option value="pedir">Pedir</option>
+							<option value="otros">Otros</option>						  
+						</select>
+						
+						<div align="right" class="botones">
+							<input id="submit" type="submit" name="submit" value="Enviar" />
+							<input id="reset" type="reset" name="reset" value="Limpiar" />
+							</div>
+					</form>
+				</fieldset>	
+			</div>		
+			<div class="mapa">
+				<fieldset>
+				<legend>Encuentranos en...</legend>
+				
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.107008205578!2d-60.713687485150395!3d-31.65829201516166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a90793b2a2bd%3A0xbc1913957371f1cf!2sSan%20Jer%C3%B3nimo%201455%2C%20S3000%20FPH%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1622764047962!5m2!1ses-419!2sar" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</fieldset>
+			</div>
+		</div>
+	</main>	
+
+	<footer>
+		<!--Pie de Pagina-->
+		<div class="footerPage">
+			<div>
+				<strong>
+					<p>Domicilio en Santa Fe Capital</p>
+				</strong>
+				<strong>
+					<p >San Geronimo 1455</p>
+				</strong>
+				<strong>
+					<p >Email: icusfe@gmail.com</p>
+				</strong>
+			</div>
+
+			<div>
+				<img src="image/logoICU.png" alt="ICU" width="10%">
+			</div>
+
+			<div class="redessociales">
+				<strong><p>I.C.U</p>
+				<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>				
+				<!-- <img src="image/facebook.png" alt="redes" >
+				<img src="image/instagram.png" alt="redes" >
+				<img src="image/whatsapp.png" alt="redes" >				 -->
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>

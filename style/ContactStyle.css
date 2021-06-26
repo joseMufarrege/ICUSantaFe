@@ -1,0 +1,75 @@
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;    
+}
+form {
+    margin:0 auto;
+    width:400px;    
+}
+ 
+input, textarea {
+    width:90%;
+    height:50%;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:20px;
+    color:#ffffff;
+}
+
+select {
+	background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:15px;
+    color:#ffffff;
+}
+
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+#reset {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.contenedor > div{
+    display: inline-block;
+}
+.mapa{
+    height: 598px;
+    width: 67%;
+}
+
+.mapa > fieldset{
+    height: 97%;     
+}
+
+.mapa > fieldset > iframe{
+    height: 97%;    
+}
+.escribinos{
+
+}
+

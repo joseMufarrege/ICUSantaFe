@@ -1,0 +1,24 @@
+#fondo{
+   background: url(image/caridad.jpg) 
+
+}
+
+h1 {
+    font:  oblique bold 180% cursive;
+}
+
+.conocenos > p {
+    font:  oblique bold 100% cursive;
+}
+
+h2 {
+    font:  oblique bold 150% cursive;
+}
+
+h3 {
+    font:  oblique bold 120% cursive;
+}
+
+.conocenos > ol {
+    font:  oblique bold 100% cursive;
+}
