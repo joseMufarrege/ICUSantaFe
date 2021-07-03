@@ -1,3 +1,26 @@
+#grilla {
+  display: grid;  
+  grid-template-areas:
+    "header header header"
+    "main main main"   
+    "footer footer footer";
+  grid-template-rows: 50% -100% 50%; 
+  grid-template-columns: 10% auto auto;
+}
+
+header {
+  grid-area: header;
+}
+main{
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+nav {
+  grid-area: nav;
+}
+
 .encabezado{
   display: grid; 
   grid-template-rows: 90%;
@@ -18,7 +41,7 @@ header{
 #logo {
   alt:"ICU";
   width:15%;
-  height:60%; 
+  height:90%; 
   display: block;
   margin:auto;  
 }
@@ -35,17 +58,12 @@ header{
   background: #F1F1F1;     
   font-size: 30px;
   text-align: center;
-  width: 25%; 
-  
+  width: 25%;   
 }
 
 .opciones > div > a > img{
   width: 100%;
   height: 100%;
-}
-
-.opciones > div{
-  display: inline-block;
 }
 
 div#info {
@@ -66,32 +84,25 @@ span{
   text-align: center;
   position: absolute;
   }
-
-
 /*----------------------------------------------  */
 
 ul{
     list-style:none;
   }
 
-.nav{
-  
-}
-
-.nav > li {
+nav {
   float:left;
 }
 
-.nav > li > a {
-  background-color:#000;
-  color:#fff;
-  text-decoration:none;
-  padding:5px 6px;
-  display:block;
+nav {
+  background-color: #222222;
+  color: #999999;
+  height: 100%;   
+  padding:5px 6px;  
   font-family: Open Sans,sans-serif ;  
 } 
 
-.nav li a:hover {
+nav > a:hover {
   background-color:#434343;
 }   
 
@@ -99,38 +110,33 @@ header{
     background: url(image/fondo3.png);
   }
 
-.menu > li {
-  display: inline-block;
-}
-
-.nav{
-  float: right;
+nav{  
   margin-right: 1%;
   margin-top: 1%;
 }
-
 
 
 footer {
   background-color: #222222;
   padding: 1%;
   font-family: Open Sans,sans-serif ;
-  font-size: large;
+  font-size: small;
   color: #999999;  
   }
 
-.footerPage{
+/* .footerPage{
   display: flex;
   flex-wrap: wrap;   
   justify-content: stretch;  
   align-items: center;
   
-}
+} */
 
-.footerPage > div{
+/* .footerPage > div{
   display: inline-block;
-  text-align: center;   
-}
+  text-align: center; 
+  justify-content: center;
+} */
 
 .redessociales > img {
   width:5%;
@@ -139,8 +145,44 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 768px){
-  body{
-    background: dodgerblue;
+@media screen and (max-width: 375px){
+
+  #logo {
+    alt:"ICU";
+    width:50%;
+    height:100%; 
+    display: block;
+    margin:auto;  
   }
+
+  .opciones > div {   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;        
+    
+  }
+  
+  .opciones > div{
+    width: 100%;
+    height: 40%;
+  }
+
+  nav{
+    display: none;
+  }
+
+  footer{
+      display: none;
+  }
+
+  #grilla {
+    display: grid;  
+    grid-template-areas:
+      "header header"
+      "main main"   
+      "footer footer footer";
+    grid-template-rows: auto auto; 
+    grid-template-columns: auto auto;
+  }
+  
 }
