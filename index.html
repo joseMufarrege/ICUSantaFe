@@ -8,9 +8,10 @@
 
 	<link rel="stylesheet" href="css/style.css">	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+	<link rel="stylesheet" href="https://mdbootstrap.com/docs/b4/jquery/css/hover-effects/"> <!-- CDN de Bootstrap del CSS -->
 </head>
 	<body >	
-		<div id="grilla">
+		<div>
 			<!-- <nav>										
 				<a href="conocenos.html">Quienes somos</a>
 				<a href="galeria.html">Galeria</a>
@@ -18,47 +19,48 @@
 				<a href="consulta.html">Contacto</a>		
 			</nav> -->
 			
-			<header  style="background-image:url(image/fondo3.png);">
-				<section class="encabezado">
-					<div>
-						<a href="index.html"><img src="image/logoICU.png" id="logo"></a>					
-					</div>		
-				</section>
+			<header class="row col-lg-12" style="background-image:url(image/fondo3.png);">		
+				<div class="col-lg-12">
+					<a href="index.html">
+						<img class="img-fluid text-center" src="image/logoICU.png" id="logo">
+					</a>					
+				</div>	
 			</header>
 
 			<main>
-				<div class="opciones">
-					<!--Area de opciones-->	
-					<div>	
+				<!--Area de opciones-->	
+				<div class="row">					
+					<div class="col-lg-6 col-md-12">
 						<a href="conocenos.html">					
-							<img class="img-responsive" id="uno" src="image/conocenos.jpg">								
-						</a>					
-					</div>		
-					<div>
-						<a href="campania.html">
-							<img class="img-responsive" id="dos" src="image/campania.jpg">
-						</a>
-					</div>
-					<div>
-						<a href="galeria.html">
-							<img class="img-responsive"id="tres" src="image/galeria.jpg">
-						</a>
-					</div>
-					<div>
-						<a href="consulta.html">
-							<img class="img-responsive" id="cuatro" src="image/contactanos.jpg">
+							<img class="img-fluid col-md-12" id="uno" src="image/conocenos.jpg">													
+						</a>						
+					</div>						
+					<div class="col-lg-6 col-md-12">
+						<a  href="campania.html">
+							<img class="img-fluid col-md-12" id="dos" src="image/campania.jpg">
 						</a>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12" >
+						<a href="galeria.html">
+							<img class="img-fluid col-md-12" id="tres" src="image/galeria.jpg">
+						</a>
+					</div>
+					<div class="col-lg-6 col-md-12">
+						<a href="consulta.html">
+							<img class="img-fluid col-md-12" id="cuatro" src="image/contactanos.jpg">
+						</a>
+					</div>
+				</div>
+
 			</main>
 
 			<footer>
-				<!--Pie de Pagina-->
-				
-				<div class="footerPage">
-					<div class="row">
-						
-						<div class="col-lg-5 col-md-4 text-center">
+				<!--Pie de Pagina-->				
+				<div class="footerPage col-lg-12">
+					<div class="row">						
+						<div class="col-lg-4 col-md-4 text-center">
 							<strong>
 								<p>Domicilio en Santa Fe Capital</p>
 							</strong>
@@ -70,11 +72,11 @@
 							</strong>
 						</div>
 
-						<div class="col-lg-3  col-md-4 text-center">
+						<div class="col-lg-5  col-md-4 text-center">
 							<img src="image/logoICU.png" alt="ICU" width="20%">
 						</div>
 
-						<div class="col-lg-4  col-md-4 text-center">
+						<div class="col-lg-3  col-md-4 text-center">
 							<strong><p>I.C.U</p>
 							<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>
 							<!-- <div class="row">			
