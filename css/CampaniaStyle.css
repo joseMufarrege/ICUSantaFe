@@ -1,57 +1,8 @@
-.lista5 {     
-    list-style: none; 
-    *list-style: decimal; 
-    font: 13px 'IMFellFrenchCanonSC', 'lucida sans';
-    padding: 0;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+.main{
+    height: 100%;
+    width: 100%
 }
 
-.lista5 {      
-    margin: 0;
-    margin-left: 1em;
-    padding: 0;     
-}
-
-.lista5 li{
-    position: relative;
-    margin-bottom: 1.5em;
-    padding: 1em;
-    background-color: #eaeaea;
-}
-
-.lista5 li:before {
-    position: absolute;
-    top: -0.5em;
-    left: -0.9em;
-    width: 1.8em;
-    height: 1.2em;
-     
-    font-size: 2em;
-    line-height: 1.2;
-    font-weight: bold;
-    text-align: center;
-    color: #464646;
-    background-color: #d0d0d0;
-     
-    transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    -webkit-transform: rotate(-20deg);
-    z-index: 99;
-    overflow: hidden;     
-    content: "♦";   
-}
-
-.campania{
-    
-    display: flex;      
-    flex-wrap: wrap; 
-    align-items: stretch;
-   }
-
-.campania > div {    
-    padding: 10px;   
-    text-align: center;
-}
 
 p {
      font: 15px 'IMFellFrenchCanonSC', 'lucida sans';
