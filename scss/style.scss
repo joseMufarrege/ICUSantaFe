@@ -1,0 +1,27 @@
+@import "variables";
+
+section{
+    background-color: tomato;
+
+    h1 {
+        color:black;
+
+        a {
+            text-decoration: underline;
+
+            &:hover{
+                text-decoration: none;
+
+            }
+        }
+    }
+    @media (max-width:768px){
+        
+    }
+}
+
+
+
+.carrusel{
+    background-color: $bg-color;
+}
