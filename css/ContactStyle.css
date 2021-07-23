@@ -1,4 +1,4 @@
-label {
+/* label {
     display:block;
     margin-top:20px;
     letter-spacing:2px;
@@ -56,7 +56,18 @@ textarea {
 
 .contenedor > div{
     display: inline-block;
+} */
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
 }
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
 .mapa{
     height: 598px;
     width: 67%;
@@ -68,8 +79,5 @@ textarea {
 
 .mapa > fieldset > iframe{
     height: 97%;    
-}
-.escribinos{
-
 }
 
