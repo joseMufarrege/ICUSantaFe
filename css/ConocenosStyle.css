@@ -1,0 +1,37 @@
+h1 {
+    font:  oblique bold 180% cursive;
+}
+
+.conocenos > p {
+    font:  oblique bold 100% cursive;
+}
+
+h2 {
+    font:  oblique bold 150% cursive;
+}
+
+h3 {
+    font:  oblique bold 120% cursive;
+}
+
+.conocenos > ol {
+    font:  oblique bold 100% cursive;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font:  oblique bold 100% cursive;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

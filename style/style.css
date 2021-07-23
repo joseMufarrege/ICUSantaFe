@@ -1,8 +1,3 @@
-.encabezado{
-  display: grid; 
-  grid-template-rows: 90%;
-  grid-template-columns: 100%;
-}
 .encabezado > div > a{ 
   align-items: center;
 }
@@ -18,55 +13,14 @@ header{
 #logo {
   alt:"ICU";
   width:15%;
-  height:60%; 
+  height:90%;
   display: block;
-  margin:auto;  
+  margin:auto;   
 }
+
+
 /* Area Opciones ------------------------------ */
-
-.opciones {   
-    display: flex;
-    flex-wrap: wrap;
-    height: 350px;
-    align-content: stretch;
-}
-
-.opciones > div { 
-  background: #F1F1F1;     
-  font-size: 30px;
-  text-align: center;
-  width: 25%; 
-  
-}
-
-.opciones > div > a > img{
-  width: 100%;
-  height: 100%;
-}
-
-.opciones > div{
-  display: inline-block;
-}
-
-div#info {
-  width: 270px;
-  height: 150px;
-  position: absolute;
-  background-color:rgba( 31 ,31 ,31 ,0.9);
-  -webkit-transition: opacity 0.2s;
-  
-  margin-left: -50%;
-}
-
-.opciones > div > a > img:hover{
-  opacity: 50%;
-}
-
-span{
-  text-align: center;
-  position: absolute;
-  }
-
+/* 
 
 /*----------------------------------------------  */
 
@@ -118,19 +72,6 @@ footer {
   font-size: large;
   color: #999999;  
   }
-
-.footerPage{
-  display: flex;
-  flex-wrap: wrap;   
-  justify-content: stretch;  
-  align-items: center;
-  
-}
-
-.footerPage > div{
-  display: inline-block;
-  text-align: center;   
-}
 
 .redessociales > img {
   width:5%;

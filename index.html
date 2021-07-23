@@ -2,94 +2,98 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Instituto de la Caridad Universal</title>
 
-	<link rel="stylesheet" href="style/style.css">
-
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+	<link rel="stylesheet" href="https://mdbootstrap.com/docs/b4/jquery/css/hover-effects/"> <!-- CDN de Bootstrap del CSS -->
 </head>
-<body >		
-	<header  style="background-image:url(image/fondo3.png);">
-		<section class="encabezado">
-			<div>
-				<a href="index.html"><img src="image/logoICU.png" id="logo"></a>
-
-				<ul class="nav">								
-					<li><a href="conocenos.html">Quienes somos</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="campania.html">Campañas</a></li>
-					<li><a href="consulta.html">Contacto</a></li>
-				</ul> 
-			</div>
-			<!-- <div class="dropdown">
-				<button class="btn btn-primary dropdown-toggle glyphicon glyphicon-menu-hamburger" type="button" data-toggle="dropdown">
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li><a href="conocenos.html">Conocenos</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="campania.html">Campañas</a></li>
-					<li><a href="consulta.html">Contacto</a></li>
-				</ul>
-			  </div>
-			</div> -->
-   		</section>
-	</header>
-
-	<main>
-		<div class="opciones">
-			<!--Area de opciones-->	
-			<div class="imagen">	
-				<a href="conocenos.html">
-					<!-- <span>Consulta</span> -->
-					<img id="uno" src="image/conocenos.jpg">								
+	<body class="col-lg-12" >				
+		<header class="row" style="background-image:url(image/fondo3.png);">		
+			<div class="col-lg-12">
+				<a href="index.html">
+					<img class="img-fluid text-center" src="image/logoICU.png" id="logo">
 				</a>					
-			</div>		
-			<div>
-				<a href="campania.html">
-					<img id="dos" src="image/campania.jpg">
-				</a>
+			</div>	
+		</header>
+		<main>
+			<!--Area de opciones-->	
+			<div class="row">					
+				<div class=" col-lg-6 col-md-12 thumbnail text-center">					
+					<a href="conocenos.html">			
+						<img class="img1 img-fluid col-lg-12 px-0" id="uno" src="image/conocenos.jpg">																		
+						<div class="caption"> 
+							<h3>Conocenos</h3> 
+						</div> 
+					</a>	
+				</div>						
+				<div class="col-lg-6 col-md-12 thumbnail text-center">
+					<a  href="campania.html">
+						<img class="img1 img-fluid col-lg-12  px-0" id="dos" src="image/campania.jpg">
+						<div class="caption"> 
+							<h3>Campaña</h3> 
+						</div> 
+					</a>
+				</div>
 			</div>
-			<div>
-				<a href="galeria.html">
-					<img id="tres" src="image/galeria.jpg">
-				</a>
+			<div class="row">
+				<div class="col-lg-6 col-md-12 thumbnail text-center" >
+					<a href="galeria.html">
+						<img class="img1 img-fluid col-md-12  px-0" id="tres" src="image/galeria.jpg">
+						<div class="caption"> 
+							<h3>Galeria</h3> 
+						</div> 
+					</a>
+				</div>
+				<div class="col-lg-6 col-md-12 thumbnail text-center">
+					<a href="consulta.html">
+						<img class="img1 img-fluid col-md-12  px-0" id="cuatro" src="image/contactanos.jpg">
+						<div class="caption"> 
+							<h3>Contactanos</h3> 
+						</div> 
+					</a>
+				</div>
 			</div>
-			<div>
-				<a href="consulta.html">
-					<img id="cuatro" src="image/contactanos.jpg">
-				</a>
-			</div>
-		</div>
-	</main>
 
-	<footer>
-		<!--Pie de Pagina-->
-		<div class="footerPage">
-			<div>
-				<strong>
-					<p>Domicilio en Santa Fe Capital</p>
-				</strong>
-				<strong>
-					<p >San Geronimo 1455</p>
-				</strong>
-				<strong>
-					<p >Email: icusfe@gmail.com</p>
-				</strong>
-			</div>
+		</main>
 
-			<div>
-				<img src="image/logoICU.png" alt="ICU" width="10%">
-			</div>
+		<footer>
+			<!--Pie de Pagina-->				
+			<div class="footerPage col-lg-12">
+				<div class="row">						
+					<div class="col-lg-4 col-md-4 text-center">
+						<strong>
+							<p>Domicilio en Santa Fe Capital</p>
+						</strong>
+						<strong>
+							<p >San Geronimo 1455</p>
+						</strong>
+						<strong>
+							<p >Email: icusfe@gmail.com</p>
+						</strong>
+					</div>
+	
+					<div class="col-lg-4  col-md-4 text-center">
+						<img src="image/logoICU.png" alt="ICU" width="20%">
+					</div>
+	
+					<div class="col-lg-3  col-md-4 text-center">
+						<strong><p>I.C.U</p>
+						<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>
+						<!-- <div class="row">			
+							<img class="col-lg-4" src="image/facebook.png" alt="redes" >
+							<img class="col-lg-4" src="image/instagram.png" alt="redes" >
+							<img class="col-lg-4" src="image/whatsapp.png" alt="redes" >		
+						</div>		 -->
+					</div>
+				</div>
+			</div>	
+		</footer>
+		
+	</body>
 
-			<div class="redessociales">
-				<strong><p>I.C.U</p>
-				<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>				
-				<!-- <img src="image/facebook.png" alt="redes" >
-				<img src="image/instagram.png" alt="redes" >
-				<img src="image/whatsapp.png" alt="redes" >				 -->
-			</div>
-		</div>		
-
-	</footer>
-</body>
 </html>
+
+

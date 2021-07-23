@@ -5,103 +5,134 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Instituto de la Caridad Universal</title>
 
-	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="style/ContactStyle.css">
-
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ContactStyle.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
-	<header  style="background-image:url(image/fondo3.png);">
-		<section class="encabezado">
-			<div>
-				<a href="index.html"><img src="image/logoICU.png" id="logo"></a>
-
-				<ul class="nav">								
-					<li><a href="conocenos.html">Conocenos</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="campania.html">Campañas</a></li>
-					<li><a href="consulta.html">Contacto</a></li>
-				</ul> 
-			</div>
-			<!-- <div class="dropdown">
-				<button class="btn btn-primary dropdown-toggle glyphicon glyphicon-menu-hamburger" type="button" data-toggle="dropdown">
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li><a href="conocenos.html">Conocenos</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="campania.html">Campañas</a></li>
-					<li><a href="consulta.html">Contacto</a></li>
-				</ul>
-			  </div>
-			</div> -->
-   		</section>
-	</header>	
+	<header class="row" style="background-image:url(image/fondo3.png);">		
+		<div class="col-lg-12">
+			<a href="index.html">
+				<img class="img-fluid text-center" src="image/logoICU.png" id="logo">
+			</a>					
+		</div>	
+	</header>
 	<main>
-		<div class="contenedor">
-			<div class="escribinos">
-				<fieldset>
-					<legend>Escribenos...</legend><br>
-					<form action="contact.php" method="post">
-							<label for="nombre">Nombre y Apellido</label>
-							<input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
-
-							<label for="email">Email</label>
-							<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
-
-							<label for="mensaje">Mensaje</label>
-							<textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
-							
-							<label for="solicitud">Accion</label>
-							<select name="solicitud" id="solicitud">
-							<option value="donar">Donar</option>
-							<option value="pedir">Pedir</option>
-							<option value="otros">Otros</option>						  
-						</select>
-						
-						<div align="right" class="botones">
-							<input id="submit" type="submit" name="submit" value="Enviar" />
-							<input id="reset" type="reset" name="reset" value="Limpiar" />
+		<div class="col-lg-12 ">	
+			<div class="row ">
+				<div class="col-lg-5 col-md-5 m-1">
+					<form class="well form-horizontal jumbotron"  method="post"  id="contact_form">
+						<fieldset>
+							<!-- Form Name -->
+							<legend >
+								<h4><b>Escribinos...</b></h4>
+							</legend>
+							<br>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-lg-12 col-md-12 control-label">Nombre</label>  
+								<div class="col-lg-12 col-md-12 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input  name="first_name" placeholder="Ingrese su nombre/s" class="form-control"  type="text">
+									</div>
+								</div>
 							</div>
+
+							<!-- Text input-->
+
+							<div class="form-group">
+								<label class="col-lg-12 col-md-12 control-label" >Apellido</label> 
+								<div class="col-lg-12 col-md-12 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input name="last_name" placeholder="Ingrese su apellido/s" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group"> 
+								<label class="col-lg-12 col-md-12 control-label">Accion</label>
+								<div class="col-lg-12 col-md-12 selectContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+										<select name="department" class="form-control selectpicker">
+											<option value="">Donar</option>				
+											<option>Pedir</option>
+											<option >Otros</option>		
+										</select>
+									</div>
+								</div>
+							</div>					
+						
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-lg-12 col-md-12 control-label">E-Mail</label>  
+								<div class="col-lg-12 col-md-12 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+										<input name="email" placeholder="Ingrese su mail" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-12 col-md-12 control-label">Mensaje</label>  
+								<div class="col-lg-12 col-md-12 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+										<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<!-- Success message -->
+							<!-- <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div> -->
+
+								<!-- Button -->
+							<div class="form-group">
+								<label class="col-md-12 control-label"></label>
+								<div class="col-md-12"><br>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnviar <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+								</div>
+							</div>
+						</fieldset>
 					</form>
-				</fieldset>	
-			</div>		
-			<div class="mapa">
-				<fieldset>
-				<legend>Encuentranos en...</legend>
-				
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.107008205578!2d-60.713687485150395!3d-31.65829201516166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a90793b2a2bd%3A0xbc1913957371f1cf!2sSan%20Jer%C3%B3nimo%201455%2C%20S3000%20FPH%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1622764047962!5m2!1ses-419!2sar" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-				</fieldset>
+				</div>
+				<div class="col-lg-5 col-md-5 m-2 ">					
+					<iframe class="col-lg-12 col-md-12 jumbotron" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.8012086769986!2d-60.6975604848471!3d-31.61190648133944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9e1d510afab%3A0xc9675a81f1ca83f5!2sAv.%20Arist%C3%B3bulo%20del%20Valle%206143%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1626653898628!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
 			</div>
-		</div>
+		</div><!-- /.container -->
 	</main>	
 
 	<footer>
-		<!--Pie de Pagina-->
-		<div class="footerPage">
-			<div>
-				<strong>
-					<p>Domicilio en Santa Fe Capital</p>
-				</strong>
-				<strong>
-					<p >San Geronimo 1455</p>
-				</strong>
-				<strong>
-					<p >Email: icusfe@gmail.com</p>
-				</strong>
-			</div>
+		<!--Pie de Pagina-->				
+		<div class="footerPage col-lg-12">
+			<div class="row">						
+				<div class="col-lg-4 col-md-4 text-center">
+					<strong>
+						<p>Domicilio en Santa Fe Capital</p>
+					</strong>
+					<strong>
+						<p >San Geronimo 1455</p>
+					</strong>
+					<strong>
+						<p >Email: icusfe@gmail.com</p>
+					</strong>
+				</div>
 
-			<div>
-				<img src="image/logoICU.png" alt="ICU" width="10%">
-			</div>
+				<div class="col-lg-4  col-md-4 text-center">
+					<img src="image/logoICU.png" alt="ICU" width="20%">
+				</div>
 
-			<div class="redessociales">
-				<strong><p>I.C.U</p>
-				<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>				
-				<!-- <img src="image/facebook.png" alt="redes" >
-				<img src="image/instagram.png" alt="redes" >
-				<img src="image/whatsapp.png" alt="redes" >				 -->
+				<div class="col-lg-3  col-md-4 text-center">
+					<strong><p>I.C.U</p>
+					<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>	
+				</div>
 			</div>
-		</div>		
+		</div>	
 	</footer>
 </body>
 </html>

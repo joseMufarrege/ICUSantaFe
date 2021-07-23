@@ -1,104 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Instituto de la Caridad Universal</title>
 
-	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="style/CampaniaStyle.css">
+		<link rel="stylesheet" href="css/style.css">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+		<link rel="stylesheet" href="https://mdbootstrap.com/docs/b4/jquery/css/hover-effects/"> <!-- CDN de Bootstrap del CSS -->
 
-</head>
-<body>
-	<header  style="background-image:url(image/fondo3.png);">
-		<section class="encabezado">
-			<div>
-				<a href="index.html"><img src="image/logoICU.png" id="logo"></a>
 
-				<ul class="nav">								
-					<li><a href="conocenos.html">Conocenos</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="campania.html">Campañas</a></li>
-					<li><a href="consulta.html">Contacto</a></li>
-				</ul> 
-			</div>
-			<!-- <div class="dropdown">
-				<button class="btn btn-primary dropdown-toggle glyphicon glyphicon-menu-hamburger" type="button" data-toggle="dropdown">
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li><a href="conocenos.html">Conocenos</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="campania.html">Campañas</a></li>
-					<li><a href="consulta.html">Contacto</a></li>
-				</ul>
-			  </div>
-			</div> -->
-   		</section>
-	</header>
-
-	<main>			 	
-		<div class="campania">
-			<div>
-				<strong><p>Campaña 1 - Barrio Santa Rosa</p></strong>
-				<ul class="lista5">
-					<li>2 Colchones</li>
-					<li>Alimentos No Perecederos</li>
-					<li>Elementos de Limpieza</li>
-					<li>Utiles Escolares</li>
-					<li>Sabanas</li>
-				</ul>	
-			</div>
-			<div>
-				<strong><p>Campaña 2 - Familia Gonzalez</p></strong>
-				<ul class="lista5">
-					<li>Zapatillas</li>
-					<li>Pantalones</li>
-					<li>Sabanas</li>				
-					<li>Utiles Escolares</li>
-				</ul>
-			</div>
-			<div>
-				<strong><p>Campaña 3 - Familia Garcia</p></strong>
-				<ul class="lista5">
-					<li>Calzados Nro 40°</li>
-					<li>Pantalones</li>
-					<li>Sabanas</li>				
-					<li>Utiles Escolares</li>
-					<li>Comida</li>
-					<li>Colchon</li>
-				</ul>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body class="col-lg-12">
+		<header class="row" style="background-image:url(image/fondo3.png);">		
+			<div class="col-lg-12">
+				<a href="index.html">
+					<img class="img-fluid text-center" src="image/logoICU.png" id="logo">
+				</a>					
 			</div>	
-		</div>
-	</main>														
+		</header>
+		<main >
 
-	<footer>
-		<!--Pie de Pagina-->
-		<div class="footerPage">
-			<div>
-				<strong>
-					<p>Domicilio en Santa Fe Capital</p>
-				</strong>
-				<strong>
-					<p >San Geronimo 1455</p>
-				</strong>
-				<strong>
-					<p >Email: icusfe@gmail.com</p>
-				</strong>
+			<div class="row m-4">
+				<div class="col-lg-4">
+					<h4 class="mx-a">Campaña Santa Rosa</h4>			          
+					<table class=" table">
+					<thead>
+						<tr>
+						<th>Articulos</th>
+						<th>Cantidad</th>				  
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<td>Par Zapatillas Nro 40</td>
+						<td>2</td>		
+						</tr>
+						<tr>
+						<td>Colchon 1 plaza</td>
+						<td>3</td>
+						</tr>
+						<tr>
+						<td>Litro de Leche</td>
+						<td>2</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				<div class="col-lg-4">				
+					<h4>Campaña Barrio Las Flores</h4>		    
+					<table class="table">
+					<thead>
+						<tr>
+						<th>Articulos</th>
+						<th>Cantidad</th>				  
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<td>Par Zapatillas Nro 40</td>
+						<td>2</td>		
+						</tr>
+						<tr>
+						<td>Colchon 1 plaza</td>
+						<td>3</td>
+						</tr>
+						<tr>
+						<td>Litro de Leche</td>
+						<td>2</td>
+						</tr>
+						<tr>
+						<td>Arroz Kg</td>
+						<td>2</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
 			</div>
-
-			<div>
-				<img src="image/logoICU.png" alt="ICU" width="10%">
+			<div class="row p-4">
 			</div>
+		</main>														
 
-			<div class="redessociales">
-				<strong><p>I.C.U</p>
-				<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>				
-				<!-- <img src="image/facebook.png" alt="redes" >
-				<img src="image/instagram.png" alt="redes" >
-				<img src="image/whatsapp.png" alt="redes" >				 -->
-			</div>
-		</div>		
+		<footer>
+			<!--Pie de Pagina-->				
+			<div class="footerPage col-lg-12">
+				<div class="row">						
+					<div class="col-lg-4 col-md-4 text-center">
+						<strong>
+							<p>Domicilio en Santa Fe Capital</p>
+						</strong>
+						<strong>
+							<p >San Geronimo 1455</p>
+						</strong>
+						<strong>
+							<p >Email: icusfe@gmail.com</p>
+						</strong>
+					</div>
 
-	</footer>
-</body>
+					<div class="col-lg-4  col-md-4 text-center">
+						<img src="image/logoICU.png" alt="ICU" width="20%">
+					</div>
+
+					<div class="col-lg-3  col-md-4 text-center">
+						<strong><p>I.C.U</p>
+						<p>INSTITUTO DE LA CARIDAD UNIVERSAL</p></strong>
+					</div>
+				</div>
+			</div>	
+
+		</footer>
+	</body>
 </html>
