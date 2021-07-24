@@ -12,9 +12,9 @@ padding-left:0;
   grid-template-rows: 90%;
   grid-template-columns: 100%;
 }
-.encabezado > div > a{ 
+/* .encabezado > div > a{ 
   align-items: center;
-}
+} */
 
 header{
   height: 180px;
@@ -38,11 +38,11 @@ header{
 
 
 footer {
-  background-color: #222222;
+  /* background-color: #222222; */
   padding: 1%;
-  font-family: Open Sans,sans-serif ;
+  /* font-family: Open Sans,sans-serif ; */
   font-size: small;
-  color: #999999;  
+  /* color: #999999;   */
   }
 
 .redessociales > img {
@@ -64,15 +64,15 @@ a:hover .caption{
   visibility: hidden;  
   width: 100%;
  }
-a:hover .img1{
+/* a:hover .img1{
     opacity:40%
- }
+ } */
 h3{
   text-decoration-line: underline;
 }
 
 
-
+/* 
 #uno{
   height: 100%;
   
@@ -94,7 +94,7 @@ h3{
   height: 100%;
   object-fit: cover;
   object-position: center center;
-}
+} */
 
 /* Media Queries */
 

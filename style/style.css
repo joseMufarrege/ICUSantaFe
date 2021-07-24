@@ -1,87 +1,41 @@
-.encabezado > div > a{ 
+/* Footer */
+/*Opciones */
+.encabezado div a {
   align-items: center;
 }
 
-header{
-  height: 180px;
+a:hover .img1 {
+  opacity: 40%;
 }
-
-.menu_opciones{
-  align-items: end;
-}
-
-#logo {
-  alt:"ICU";
-  width:15%;
-  height:90%;
-  display: block;
-  margin:auto;   
-}
-
-
-/* Area Opciones ------------------------------ */
-/* 
-
-/*----------------------------------------------  */
-
-ul{
-    list-style:none;
-  }
-
-.nav{
-  
-}
-
-.nav > li {
-  float:left;
-}
-
-.nav > li > a {
-  background-color:#000;
-  color:#fff;
-  text-decoration:none;
-  padding:5px 6px;
-  display:block;
-  font-family: Open Sans,sans-serif ;  
-} 
-
-.nav li a:hover {
-  background-color:#434343;
-}   
-
-header{    
-    background: url(image/fondo3.png);
-  }
-
-.menu > li {
-  display: inline-block;
-}
-
-.nav{
-  float: right;
-  margin-right: 1%;
-  margin-top: 1%;
-}
-
-
 
 footer {
   background-color: #222222;
-  padding: 1%;
-  font-family: Open Sans,sans-serif ;
-  font-size: large;
-  color: #999999;  
-  }
-
-.redessociales > img {
-  width:5%;
-  height:5%;
+  color: #999999;
+  font-family: Open Sans, sans-serif;
 }
 
-/* Media Queries */
-
-@media screen and (max-width: 768px){
-  body{
-    background: dodgerblue;
-  }
+#uno {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
+
+#dos {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#tres {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#cuatro {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/*# sourceMappingURL=style.css.map */

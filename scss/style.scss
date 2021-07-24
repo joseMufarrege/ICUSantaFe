@@ -1,27 +1,30 @@
 @import "variables";
 
-section{
-    background-color: tomato;
-
-    h1 {
-        color:black;
-
-        a {
-            text-decoration: underline;
-
-            &:hover{
-                text-decoration: none;
-
-            }
+.encabezado{
+    div {
+        a{
+            align-items: center; 
         }
-    }
-    @media (max-width:768px){
-        
     }
 }
 
+a:hover {
+    .img1{
+        opacity: 40%
+    }
+}
+
+footer{
+    background-color: $footerBg ;
+    color: $footerColor;
+    font-family: $footerFont;
+}
 
 
-.carrusel{
-    background-color: $bg-color;
+@each $number in $numbers{
+    ##{$number}{  
+         height: $sizeOp*2;  
+        object-fit: cover;
+        object-position: center center;
+    }
 }
