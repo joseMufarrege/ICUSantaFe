@@ -2,9 +2,17 @@
   position: relative;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .padding-0{
 padding-right:0;
 padding-left:0;
+}
+
+#menu{
+ scroll-behavior: smooth;
 }
 
 .encabezado{
@@ -19,8 +27,8 @@ padding-left:0;
 
 #logo {
   alt:"ICU";
-   width:15%;
-  /*height:90%;  */
+   width:10%;
+  /* height:90%;  */
   display: block;
   margin:auto;  
 }
@@ -72,9 +80,12 @@ h3{
   #logo {
     alt:"ICU";
     width:50%;
-    height:100%; 
     display: block;
     margin:auto;  
+  }
+
+  #menu{
+    display: hide;
   }
 /* 
   .opciones > div {   

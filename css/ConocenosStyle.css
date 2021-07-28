@@ -2,11 +2,11 @@ h1 {
     font:  oblique bold 180% cursive;
 }
 
-p {
+.main p {
     font:  oblique bold 100% cursive;    
 }
 
-li {
+.lista li {
     font:  oblique bold 100% cursive;    
 }
 
