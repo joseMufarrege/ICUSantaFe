@@ -2,22 +2,23 @@
   position: relative;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .padding-0{
 padding-right:0;
 padding-left:0;
+}
+
+#menu{
+ scroll-behavior: smooth;
 }
 
 .encabezado{
   display: grid; 
   grid-template-rows: 90%;
   grid-template-columns: 100%;
-}
-/* .encabezado > div > a{ 
-  align-items: center;
-} */
-
-header{
-  height: 180px;
 }
 
 .menu_opciones{
@@ -26,8 +27,8 @@ header{
 
 #logo {
   alt:"ICU";
-  width:15%;
-  height:90%; 
+   width:10%;
+  /* height:90%;  */
   display: block;
   margin:auto;  
 }
@@ -72,50 +73,29 @@ h3{
 }
 
 
-/* 
-#uno{
-  height: 100%;
-  
-  object-fit: cover;
-  object-position: center center;
-}
-
-#dos{
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-#tres{
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-#cuatro{
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-} */
-
 /* Media Queries */
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 630px){
 
   #logo {
     alt:"ICU";
     width:50%;
-    height:100%; 
     display: block;
     margin:auto;  
   }
 
+  #menu{
+    display: hide;
+  }
+/* 
   .opciones > div {   
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; 
-  }
+  } */
   
   .opciones > div{
-    width: 100%;
+    width: 80%;
     height: 40%;
   }
 
