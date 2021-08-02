@@ -6,37 +6,16 @@ body {
   overflow-x: hidden;
 }
 
-.padding-0{
-padding-right:0;
-padding-left:0;
-}
-
 #menu{
  scroll-behavior: smooth;
 }
 
-.encabezado{
-  display: grid; 
-  grid-template-rows: 90%;
-  grid-template-columns: 100%;
-}
-
-.menu_opciones{
-  align-items: end;
-}
-
 #logo {
   alt:"ICU";
-   width:10%;
-  /* height:90%;  */
+  width:10%;
   display: block;
   margin:auto;  
 }
-/* Area Opciones ------------------------------ */
-
-/*----------------------------------------------  */
-
-
 
 footer {
   /* background-color: #222222; */
@@ -59,15 +38,14 @@ a:hover .caption{
 .thumbnail { 
   position: relative; 
  } 
+
  .caption{ 
   position: absolute; 
   top: 45%; 
   visibility: hidden;  
   width: 100%;
  }
-/* a:hover .img1{
-    opacity:40%
- } */
+
 h3{
   text-decoration-line: underline;
 }
@@ -79,32 +57,9 @@ h3{
 
   #logo {
     alt:"ICU";
-    width:50%;
+    width:40%;
     display: block;
     margin:auto;  
-  }
-
-  #menu{
-    display: hide;
-  }
-/* 
-  .opciones > div {   
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; 
-  } */
-  
-  .opciones > div{
-    width: 80%;
-    height: 40%;
-  }
-
-  nav{
-    display: none;
-  }
-
-  footer{
-      display: none;
-  }
-
+  }    
+ 
 }
