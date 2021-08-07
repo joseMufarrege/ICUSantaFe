@@ -18,24 +18,28 @@ footer {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  border-radius: 15%;
 }
 
 #dos {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  border-radius: 15%;
 }
 
 #tres {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  border-radius: 15%;
 }
 
 #cuatro {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  border-radius: 15%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,12 +17,9 @@ body {
   margin:auto;  
 }
 
-footer {
-  /* background-color: #222222; */
-  padding: 1%;
-  /* font-family: Open Sans,sans-serif ; */
+footer { 
+  padding: 1%;  
   font-size: small;
-  /* color: #999999;   */
   }
 
 .redessociales > img {
@@ -40,20 +37,24 @@ a:hover .caption{
  } 
 
  .caption{ 
-  position: absolute; 
-  top: 45%; 
+  position: absolute;
+  display: block;
+  top: 40%; 
   visibility: hidden;  
-  width: 100%;
+  width: 100%;  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.2vw;
+
  }
 
-h3{
-  text-decoration-line: underline;
+ .caption > span{
+  flex-wrap: wrap;
 }
 
 
 /* Media Queries */
 
-@media screen and (max-width: 630px){
+@media screen and (max-width: 766px){
 
   #logo {
     alt:"ICU";
@@ -61,5 +62,9 @@ h3{
     display: block;
     margin:auto;  
   }    
- 
+  
+  .caption > span{
+    font-size: 2.5vw;
+  }
+
 }
