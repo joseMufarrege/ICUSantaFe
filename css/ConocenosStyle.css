@@ -3,11 +3,13 @@ h1 {
 }
 
 .main p {
-    font:  oblique bold 100% cursive;     
+    font:  oblique bold 100% cursive;
+    font-size: 20px;
 }
 
 .lista li {
-    font:  oblique bold 100% cursive;    
+    font:  oblique bold 100% cursive;
+    font-size: 20px;
 }
 
 h2 {
@@ -23,14 +25,13 @@ h3 {
 }
 
 #imgICU{
-    width:90%;
-    display: block; 
-    margin: auto;
+    width:100%;
+  
 }
 
 #cajaLogo{
   margin: auto;
-    align-content: center;
+  align-content: center;
 }
 
 #imgCampania{
