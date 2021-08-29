@@ -49,7 +49,7 @@ function handleFileSelect(evt) {
   
   var files = evt.target.files; // FileList object
   var xl2json = new ExcelToJSON();
-  xl2json.parseExcel("file/campania.xls");
+  xl2json.parseExcel(files[0]);
 }
 
 function printCampania(jsonObject){
