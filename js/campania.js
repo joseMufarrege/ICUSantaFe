@@ -39,27 +39,45 @@ var ExcelToJSON = function() {
 
       reader.onerror = function(ex) {
         console.log(ex);
-      };
-
+      };   
       reader.readAsBinaryString(file);
     };
 };
 
 function handleFileSelect(evt) {
-  
+
   var files = evt.target.files; // FileList object
   var xl2json = new ExcelToJSON();
-  xl2json.parseExcel("file/campania.xls");
+  xl2json.parseExcel(files[0]);
 }
 
 function printCampania(jsonObject){
 
     let objProducto = JSON.parse(jsonObject);
-    let tabla = "";
-    let div = document.getElementById("Campania");
+    
+    let contenedor = document.getElementById("Campania");
+ 
+    let table = ` <div class="col-lg-4">
+                    <table class=" table">
+                      <thead>
+                        <tr>
+                          <th>Articulos</th>
+                          <th>Cantidad</th>				  
+                        </tr>
+                      </thead>`;
 
     objProducto.forEach(producto =>{ 
-      console.log("Producto: " + producto.Producto , "Cantidad: " + producto.Cantidad)
-    })
-    
+    table += `<tr>
+                <td> ${producto.Producto} </td>
+                <td>${producto.Cantidad}</td>		
+              </tr>`;
+  
+    });
+    table += ` </tbody>
+               </table>
+               </div>`;
+
+    contenedor.innerHTML = table;
+
+    console.log(contenedor);
 }
