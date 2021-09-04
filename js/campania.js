@@ -15,8 +15,12 @@ class Product {
     }
 }
 
+window.addEventListener("load", function(event) {
+
+})
+
 var ExcelToJSON = function() {
-    debugger;
+
     this.parseExcel = function(file) {
       var reader = new FileReader();
 
@@ -45,9 +49,10 @@ var ExcelToJSON = function() {
 };
 
 function handleFileSelect(evt) {
-
+  debugger;
   var files = evt.target.files; // FileList object
-  var xl2json = new ExcelToJSON();
+  var xl2json = new ExcelToJSON(); 
+  //files[0].name = "Campania/campania.xlsx"
   xl2json.parseExcel(files[0]);
 }
 
