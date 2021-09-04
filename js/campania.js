@@ -51,8 +51,7 @@ var ExcelToJSON = function() {
 function handleFileSelect(evt) {
   debugger;
   var files = evt.target.files; // FileList object
-  var xl2json = new ExcelToJSON(); 
-  //files[0].name = "Campania/campania.xlsx"
+  var xl2json = new ExcelToJSON();
   xl2json.parseExcel(files[0]);
 }
 
