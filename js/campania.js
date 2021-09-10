@@ -16,7 +16,14 @@ class Product {
 }
 
 window.addEventListener("load", function(event) {
+  // debugger;
 
+  // var Excel;
+  // Excel = new XMLHttpRequest();  
+  // Excel.open("GET","C:/Users/Josema/Desktop/campania.xlsx") 
+  // Excel.send();
+  // file=Excel.responseText;
+  // handleFileSelect(file);
 })
 
 var ExcelToJSON = function() {
@@ -25,13 +32,14 @@ var ExcelToJSON = function() {
       var reader = new FileReader();
 
       reader.onload = function(e) {
+     
         var data = e.target.result;
         var workbook = XLSX.read(data, {
           type: 'binary'
         });
         workbook.SheetNames.forEach(function(sheetName) {
           // Here is your object
-        
+         
           var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
           var json_object = JSON.stringify(XL_row_object);
           console.log(JSON.parse(json_object));
@@ -49,7 +57,7 @@ var ExcelToJSON = function() {
 };
 
 function handleFileSelect(evt) {
-  debugger;
+  console.log(evt);
   var files = evt.target.files; // FileList object
   var xl2json = new ExcelToJSON();
   xl2json.parseExcel(files[0]);
