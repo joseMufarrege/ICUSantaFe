@@ -1,3 +1,6 @@
+var XLSX = require('xlsx');
+
+
 class File {
     title
     constructor(title){
@@ -15,15 +18,26 @@ class Product {
     }
 }
 
-window.addEventListener("load", function(event) {
-  // debugger;
+function OnloadPage(){
+  alert("Hola");
+}
 
-  // var Excel;
-  // Excel = new XMLHttpRequest();  
-  // Excel.open("GET","C:/Users/Josema/Desktop/campania.xlsx") 
-  // Excel.send();
-  // file=Excel.responseText;
-  // handleFileSelect(file);
+window.addEventListener("load", function(event) {
+  debugger;
+  readExcel('campania.xlsx');
+  
+  function readExcel(path){
+      let workbook = XLSX.readFile(path);
+      let workbookSheets = workbook.SheetNames;
+
+      let fileArray = new Array(File);
+      console.log(fileArray);
+      workbookSheets.forEach(function(value,index,array){
+          fileArray[index].Title = value;
+      })
+      console.log(fileArray);   
+  }     
+
 })
 
 var ExcelToJSON = function() {

@@ -15,9 +15,15 @@
     "url": "https://github.com/joseMufarrege/ICUSantaFe/issues"
   },
   "homepage": "https://github.com/joseMufarrege/ICUSantaFe#readme",
-  "description": "",
+  "description": "local server",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "path": "^0.12.7",
+    "xlsx": "^0.17.1",
+    "xmlhttprequest": "^1.8.0"
   }
 }

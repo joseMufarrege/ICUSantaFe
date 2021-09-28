@@ -51,6 +51,13 @@ a:hover .caption{
   flex-wrap: wrap;
 }
 
+.encabezado div a {
+  align-items: center;
+}
+
+a:hover .img1 {
+  opacity: 40%;
+}
 
 /* Media Queries */
 

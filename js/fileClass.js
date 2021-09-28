@@ -1,7 +1,7 @@
 class File {
-    title
+    Title
     constructor(title){
-        this.title = title;
+        this.Title = title;
     }
 }
 
