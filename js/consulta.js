@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $("#send").click(function(){
     //Se valida si el campo nombre esta vacio
     if ($("#firstName").val() == ""){
@@ -45,4 +47,27 @@ $("#calculate").click(function(){
 function validarEmail(valor) {
     let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     return emailRegex.test(valor);
-  }
+}
+
+$("#pais").change(() => {
+    let pais = String($('#pais').val());
+    let file = './provincias_'+ pais.toLowerCase() +'.json';  
+      $.ajax({
+      type: 'GET',
+      url: String(file)
+    })
+    .done(function(listas_prov){        
+        var tags = $.parseJSON(listas_prov);  
+        let objSelect = ''; 
+        for (let i = 0;i < tags.cantidad;i++){
+            objSelect += `<option>`+ tags.provincias[i].nombre +`</option>`;
+        }    
+        $('#provincia').removeAttr('disabled');
+        $('#provincia').html(objSelect);
+    })
+    .fail(function(){
+      alert('Hubo un errror al cargar las provincias')
+    })
+  })
+
+  });

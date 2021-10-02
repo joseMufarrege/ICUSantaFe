@@ -18,10 +18,6 @@ class Product {
     }
 }
 
-function OnloadPage(){
-  alert("Hola");
-}
-
 window.addEventListener("load", function(event) {
   debugger;
   readExcel('campania.xlsx');
