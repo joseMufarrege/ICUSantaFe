@@ -29,7 +29,7 @@ function ejecutar(){
        
     }
     var server = http.createServer(onRequest).listen(8080);
-    console.log('Servidor corriendo en puerto 8080');
+    console.log('Servidor running en puerto 8080');
 }
 
 exports.ejecutar = ejecutar();
